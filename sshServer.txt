@@ -25,3 +25,14 @@ ssh localhost
 #All over internet access your directory or folder (port forwarding)
 
 ssh -R 80:localhost:8000 localhost.run
+
+
+#close ssh server
+
+ctrl + c 
+#run background
+
+ ctrl + z  
+ # close background server
+
+ killall ssh
