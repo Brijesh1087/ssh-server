@@ -1,0 +1,27 @@
+#All this command for Linux distro.
+
+sudo apt-get upgrade
+
+sudo apt-get update
+
+sudo apt-get install openssh-server
+
+cd ~/.ssh
+
+ssh-keygen
+
+cat id_rsa.pub >> authorized_keys
+
+chmod 640 authorized_keys
+
+sudo service ssh restart
+
+ssh localhost
+
+#Example:
+
+ssh localhost
+
+#All over internet access your directory or folder (port forwarding)
+
+ssh -R 80:localhost:8000 localhost.run
